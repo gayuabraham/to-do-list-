@@ -132,3 +132,17 @@ body::before {
   height: 18px;
   cursor: pointer;
 }
+
+@media (max-width: 1200px) {
+  body {
+      background: url('https://i.pinimg.com/736x/b6/1f/0e/b61f0e0c2c72cc14383205940cfc869d.jpg') no-repeat center center/cover;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+      background: url('https://i.pinimg.com/736x/b6/1f/0e/b61f0e0c2c72cc14383205940cfc869d.jpg') no-repeat center center/cover;
+  }
+}
+
+
