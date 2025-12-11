@@ -58,7 +58,7 @@ body::before {
   outline: none;
   font-size: 18px;
   background: rgba(255,255,255,0.25);
-  color: #fff;
+  color: #131010;
   backdrop-filter: blur(5px);
   transition: 0.3s;
 }
@@ -120,6 +120,7 @@ body::before {
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s;
+ 
 }
 
 .delete-btn:hover {
@@ -142,7 +143,7 @@ body::before {
 
 @media (max-width: 600px) {
   body {
-      background: url('https://i.pinimg.com/1200x/8f/fa/d6/8ffad6b935030265f318b01fd45734e7.jpg') no-repeat center center/cover;
+      background: url('https://i.pinimg.com/1200x/93/a9/55/93a95511bc5bb3022084f89768123487.jpg') no-repeat center center/cover;
       overflow: hidden;
   }
   #taskInput{
