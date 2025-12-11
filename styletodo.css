@@ -135,14 +135,17 @@ body::before {
 
 @media (max-width: 1200px) {
   body {
-      background: url('https://i.pinimg.com/736x/b6/1f/0e/b61f0e0c2c72cc14383205940cfc869d.jpg') no-repeat center center/cover;
+      background: url('https://i.pinimg.com/736x/89/65/f4/8965f4da821d97d759d294ee274b2045.jpg') no-repeat center center/cover;
+      overflow: hidden;
   }
 }
 
 @media (max-width: 600px) {
   body {
-      background: url('https://i.pinimg.com/736x/b6/1f/0e/b61f0e0c2c72cc14383205940cfc869d.jpg') no-repeat center center/cover;
+      background: url('https://i.pinimg.com/1200x/8f/fa/d6/8ffad6b935030265f318b01fd45734e7.jpg') no-repeat center center/cover;
+      overflow: hidden;
   }
+  
 }
 
 
