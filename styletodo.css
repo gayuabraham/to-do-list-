@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://i.pinimg.com/736x/b6/1f/0e/b61f0e0c2c72cc14383205940cfc869d.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.35); /* soft overlay for readability */
+  z-index: 0;
+}
+
+.todo-container {
+  width: 350px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15); /* glass effect */
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.todo-container h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+.input-area {
+  display: flex;
+  gap: 15px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+  backdrop-filter: blur(5px);
+  transition: 0.3s;
+}
+
+#taskInput:focus {
+  background: rgba(255,255,255,0.35);
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+#addBtn {
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border: none;
+  border-radius: 12px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#taskList {
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  color: #0e0c0c;
+  transition: 0.3s;
+}
+
+.task-item:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+.status {
+  color: #4caf50;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ff6b6b, #ff8787);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.check {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
